@@ -1,0 +1,144 @@
+/* HTML  */
+.width-500px{
+    width: 500px;
+}
+.height-500px{
+    height: 500px;
+}
+.padding-100px-black{
+    border-width: 100px;
+    border-color: black;
+}
+.width-500px{
+    width: 490px;
+}
+.height-500px{
+    height: 490px;
+}
+.content-transparent{
+    opacity: 0;
+}
+.height-700px{
+    height: 700px;
+}
+.width-100px{
+    width: 100px;
+}
+.height-100px{
+    height: 100px;
+}
+.height-50px{
+    height: 40px;
+}
+.width-auto{
+    width: auto;
+} 
+.width-min-100px{
+    min-width: 100px;
+}
+.d-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.bg-black{
+    background-color: black;
+}
+.border-100px-white{
+    border: 100px;
+    border-color: black;
+}
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+#background-navbar{
+    background-image: url("media/nav-background.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* Side bar */
+        /* The side navigation menu */
+        .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: #111; /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 60px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
+        
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    /* Menu Button */
+        .container-menu {
+            display: inline-block;
+            cursor: pointer;
+        }
+        .bg-white{
+            background-color: white;
+        }
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {opacity: 0;}
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    /* /Menu Button */
+
