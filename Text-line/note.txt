@@ -1,0 +1,11 @@
+            <div class="dropdown-content">
+                <div class="screen-flex">
+                    <button id="AaPlus">Aa+</button>
+                    <button id="AaMinus">Aa-</button>
+                </div>
+                <div class="screen-flex">
+                    <button id="White">White</button>
+                    <button id="Black">Black</button>
+                </div>
+            </div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

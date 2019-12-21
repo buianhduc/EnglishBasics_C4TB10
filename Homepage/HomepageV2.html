@@ -1,81 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/Homepagev2.css">
     <link rel="stylesheet" href="CSS/W3-CSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Lobster|Pacifico|Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
     <title>HOMEPAGE</title>
 </head>
+
 <body style="background-color:white">
     <!-- NavBar -->
     <div>
         <div id="mySidenav" class="sidenav">
-                <a href="#">LINK 1</a>
-                <a href="#">LINK 1</a>
-                <a href="#">LINK 1</a>
-                <a href="#">LINK 1</a>
-            </div>
+            <a href="#">LINK 1</a>
+            <a href="#">LINK 1</a>
+            <a href="#">LINK 1</a>
+            <a href="#">LINK 1</a>
+        </div>
     </div>
-    <div id = "main">
-        <div id = "background">
-                <!-- Use any element to open the sidenav -->
-                    <div class="container d-flex height-100px ">
-                        <div class="container-menu" onclick="myFunction(this)" on>
-                            <div>
-                                    <div class="bar1"></div>
-                                    <div class="bar2"></div>
-                                    <div class="bar3"></div>
-                            </div>
-                        </div>
+    <div id="main">
+        <div id="background">
+            <!-- Use any element to open the sidenav -->
                 <div>
-                    <h2 id="loi-chao"></h2>        
+                    <h2 id="loi-chao"></h2>
                 </div>
             </div>
             <!-- welcome -->
-    
+
             <!-- Getting started -->
-            <div  class="w3-display-container height-680px width-auto width-min-100px">
-                    <div class = "w3-display-middle">
-                        <h1 id="englishbasic">ENGLISH BASIC</h1>
-                        <h3 id="whereenglishmeetsmusic">THE PLACE TO LEARN ENGLISH THROUGH BOOKS AND MUSIC</h3>
-                    </div>
+            <div class="w3-display-container height-680px width-auto width-min-100px">
+                <div class="w3-display-middle">
+                    <h1 id="englishbasic">ENGLISH BASIC</h1>
+                    <h3 id="whereenglishmeetsmusic">A PLACE TO LEARN ENGLISH THROUGH BOOKS AND MUSIC</h3>
+                </div>
             </div>
         </div>
-    
-        <div id = "SongOfTheDay">
-            <h1>SONG OF THE DAY</h1>
+
+        <div id="SongOfTheDay">
+            <h1 id="songoftheday">SONG OF THE DAY</h1>
             <h2>Shelter</h2>
             <h4>BY FINNEAS</h4>
-            <audio src="media/Shelter - FINNEAS.mp3" controls></audio>
+            <audio src="media/Shelter - FINNEAS.mp3" controls style="width: 100%;"></audio>
             <p><a href="#"> Click here to go to the song's MV, as well as the lyric</a></p>
         </div>
-        <div id = "creators" class = "w3-display-container height-500px width-auto width-min-100px bg-black">
-            <div class = "w3-display-topmiddle">
-                <h1 style = "color: white;"> CREATORS </h1>
-                <p style = "color: white;" >Music is a nesscessary thing in life. Through our experience with learning English, we have found that learning English through music is an efficient way to learn the global language</p>
+        <div id="creators" class="w3-display-container height-500px width-auto width-min-100px bg-black">
+            <div class="w3-display-topmiddle middle">
+                <h1 style="color: white;"> CREATORS </h1>
+                <p style="color: white;">Music is a nesscessary thing in life. Through our experience with learning
+                    English, we have found that learning English through music is an efficient way to learn the global
+                    language</p>
             </div>
-            
-            <div class = "d-flex center space-around" >
+
+            <div class="d-flex center space-around">
                 <div id="creators-1" class="creators">
-                        <img src="Media/creators.jpg" alt=" Hi " width="100px" height="100px">
-                        <h1 style = "color: white;">Name</h1>
+                    <img src="Media/creators.jpg" alt=" Hi " width="150px" height="150px">
+                    <h1 style="color: white;">Name</h1>
                 </div>
                 <div id="creators-2" class="creators">
-                    <img src="Media/creators.jpg" alt=" Hi " width="100px" height="100px">
-                    <h1 style = "color: white;">Name</h1>
+                    <img src="Media/creators.jpg" alt=" Hi " width="150px" height="150px">
+                    <h1 style="color: white;">Name</h1>
                 </div>
                 <div id="creators-3" class="creators">
-                    <img src="Media/creators.jpg" alt=" Hi " width="100px" height="100px">
-                    <h1 style = "color: white;">Name</h1>
+                    <img src="Media/creators.jpg" alt=" Hi " width="150px" height="150px">
+                    <h1 style="color: white;">Name</h1>
                 </div>
             </div>
         </div>
     </div>
-    
-    <script src = "JS/Homepagev2.js"></script>
+
+    <script src="JS/Homepagev2.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCv17F7LtveCGp2cOYcdjYmve56sgKtOJQ",
+    authDomain: "englishbasic-838ad.firebaseapp.com",
+    databaseURL: "https://englishbasic-838ad.firebaseio.com",
+    projectId: "englishbasic-838ad",
+    storageBucket: "englishbasic-838ad.appspot.com",
+    messagingSenderId: "568749452850",
+    appId: "1:568749452850:web:57e653530e7cabfdf0162b",
+    measurementId: "G-8X77E7Q6C2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
+
 </html>

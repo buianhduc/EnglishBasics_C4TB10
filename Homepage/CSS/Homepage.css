@@ -1,0 +1,168 @@
+/* Side bar */
+        /* The side navigation menu */
+        .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: #111; /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 60px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
+        
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    /* Menu Button */
+        .container-menu {
+            display: inline-block;
+            cursor: pointer;
+        }
+        .bg-white{
+            background-color: white;
+        }
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {opacity: 0;}
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    /* /Menu Button */
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#hypers{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-items: flex-end;
+}
+#opening{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    background-image: url("Media/cover.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    position: relative;
+    margin-bottom: 0px;
+    border: 0px;
+    padding: 0px;
+    
+}
+#headerTitle>h1{
+    font-family: 'Lilita One', cursive;
+    font-size: 100px;
+}
+#headerTitle{
+    margin-bottom: 0px;
+    color: white;
+}
+#overall>h3{
+    font-family: 'Varela Round', sans-serif;
+}
+#GetStartedBtn>button{
+    background-color:rgb(205, 212, 4);
+    outline: none;
+    border-radius: 20%;
+    width: 100px;
+    border: none;
+    height: 50px;
+}
+.headerLink{
+    margin-right: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+}
+/* #SongOfTheDay{
+    background-image: url(media/earphone.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: bottom;
+    color:white;
+    height: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}  */
+/* #album-cover{
+    width: 300px; 
+    height: 300px;
+} */
+#abt{
+    background-color:rgb(6, 9, 4);
+    margin-top: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    
+
+}
+#abt #picture{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.creator{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.white-font{
+    color: white;
+
+}

@@ -60,21 +60,36 @@
     text-align: center;
     font-size: 18px;
   }
+.middle{
+    text-align: center;
+    margin: 0%;
+}
 #SongOfTheDay{
-    background-image: url(media/download.png);
+    background-image: url(media/maxresdefault.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-position: bottom;
     position: relative;
+    color:white;
     height: 300px;
 } 
+#songoftheday{
+    margin-top: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
 #background{
     background-image: url("media/nick-carter-8YWKMdekgJE-unsplash.jpg") ;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     text-align: center;
     position: relative;
 }
 #englishbasic{
+    font-family: 'Kalam', cursive;
     color: black;
     font-size: 100px;
 }

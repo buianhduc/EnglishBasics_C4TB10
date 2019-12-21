@@ -1,49 +1,149 @@
 function myFunction(x) {
     x.classList.toggle("change");
 }
-function check(){
-    var answers = {"1","2","3","4","5","6","7","8","9",'10','11','12','13','14','15','16','17','18','19','20'};
-    var usersanswers = {
-        getElementById("question1").value,
-        getElementById("question2").value,
-        getElementById("question3").value,
-        getElementById("question4").value,
-        getElementById("question5").value,
-        getElementById("question6").value,
-        getElementById("question7").value,
-        getElementById("question8").value,
-        getElementById("question9").value,
-        getElementById("question10").value,
-        getElementById("question11").value,
-        getElementById("question12").value,
-        getElementById("question13").value,
-        getElementById("question14").value,
-        getElementById("question15").value,
-        getElementById("question16").value,
-        getElementById("question17").value,
-        getElementById("question18").value,
-        getElementById("question19").value,
-        getElementById("question20").value,
-    }
-    var trueFlase;
-    for(var i = 0; i<=20; i+=1)
+function checkAnswers(){
+    var questions = [
+        {
+            "question":document.getElementById("question-1"),
+            "answer":"1",
+            "userAnswer":document.getElementById("question1").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-2"),
+            "answer":"2",
+            "userAnswer":document.getElementById("question2").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-3"),
+            "answer":"3",
+            "userAnswer":document.getElementById("question3").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-4"),
+            "answer":"4",
+            "userAnswer":document.getElementById("question4").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-5"),
+            "answer":"5",
+            "userAnswer":document.getElementById("question5").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-6"),
+            "answer":"6",
+            "userAnswer":document.getElementById("question6").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-7"),
+            "answer":"7",
+            "userAnswer":document.getElementById("question7").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-8"),
+            "answer":"8",
+            "userAnswer":document.getElementById("question8").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-9"),
+            "answer":"9",
+            "userAnswer":document.getElementById("question9").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-10"),
+            "answer":"10",
+            "userAnswer":document.getElementById("question10").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-11"),
+            "answer":"11",
+            "userAnswer":document.getElementById("question11").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-12"),
+            "answer":"12",
+            "userAnswer":document.getElementById("question12").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-13"),
+            "answer":"13",
+            "userAnswer":document.getElementById("question13").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-14"),
+            "answer":"14",
+            "userAnswer":document.getElementById("question14").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-15"),
+            "answer":"15",
+            "userAnswer":document.getElementById("question15").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-16"),
+            "answer":"16",
+            "userAnswer":document.getElementById("question16").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-17"),
+            "answer":"17",
+            "userAnswer":document.getElementById("question17").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-18"),
+            "answer":"18",
+            "userAnswer":document.getElementById("question18").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-19"),
+            "answer":"19",
+            "userAnswer":document.getElementById("question19").value,
+            "check":false,
+        },
+        {
+            "question":document.getElementById("question-20"),
+            "answer":"20",
+            "userAnswer":document.getElementById("question20").value,
+            "check":false,
+        },
+        
+    ];
+    for(var i = 0; i<questions.length; i++)
     {
-        trueFalse[i] = false;
+        console.log(questions[i]);
     }
-    for(var i = 0; i<=20; i+=1){
-        if(answers[i] == usersanswers[i]){
-            trueFalse[i] = true;
+
+    for(var i=0; i<questions.length; i++){
+        var question = questions[i];
+        if(question.answer == question.userAnswer){
+            question.check = true;
         }
     }
     var count = 0;
-    for(var i = 0; i<=20; i++)
-    {
-        if(trueFalse == true)
-        {
-            count+=1;
+    for(var i=0; i<questions.length; i++){
+        var question = questions[i];
+        if(question.check==true){
+            count++;
         }
     }
-    alert("You have got ${count} out of 20 questions right!")
+    alert(`You have got ${count} out of 20 questions right!`)
 
 }
 function ShowDateAndTime() {
@@ -61,10 +161,9 @@ function ShowDateAndTime() {
         document.getElementById("loi-chao").innerHTML = "Good Noon";
     } 
     else{
-        document.getElementById("loi-chao").innerHTML = "Good Evening"
+        document.getElementById("loi-chao").innerHTML = "Good Evening";
     }
-    document.getElementById("Date").innerHTML = date;
-    document.getElementById("Time").innerHTML = time;
+
     setTimeout(ShowDateAndTime,1000)
 }
 ShowDateAndTime()
@@ -94,3 +193,4 @@ function myFunction(x) {
         check = true;
     }
 }
+console.log('done')
