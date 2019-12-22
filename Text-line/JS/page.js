@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function(){
         var foo = document.getElementById("change-menu");
         if(propertiesBool == false)
         {
-            foo.style.display = "block";
+            foo.style.display = "flex";
             propertiesBool = true;
+
         }
         else{
             foo.style.display = "none";
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function(){
     blackBtn.addEventListener("click",function() {
         var obj = document.getElementsByTagName("body")[0];
         obj.style.backgroundColor = "black";
-        obj.style.color = "white";
+        obj.style.color = "rgb(170,170,170)";
         for(var i=0; i <= 4; i+=1)
         {
             document.getElementsByTagName("button")[i].style.borderColor = "black";
@@ -63,11 +64,6 @@ document.addEventListener('DOMContentLoaded', function(){
     // console.log(lineSpacing)
     // lineSpacing.addEventListener("click", function(){
     //     var obj = document.getElementById("text");
-    //     style = window.getComputedStyle(obj, null).getPropertyValue('line-height');
-    //     currentSize = parseFloat(style);
-    //     console.log(currentSize);
-    //     obj.style.lineHeight = currentSize*(lineSpacing.value/1000);
-    //     console.log(obj.style.lineHeight)
-
+    //     var currentLineSpacing = obj.style.lineHeight;
     // })
 })
